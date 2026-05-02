@@ -230,7 +230,27 @@ https://web.telegram.org/a/#-1001234567890
 
 이 단계가 끝나면 `.env`와 `config/chats.yaml` 파일이 만들어집니다.
 
-직접 확인하고 싶다면 `.env.example` 파일을 참고하세요. 실제 값이 들어간 `.env` 파일은 GitHub에 올리면 안 됩니다.
+직접 확인하고 싶다면 `.env.example` 파일을 참고하세요.
+
+개발자가 아니라면 `.env`라는 파일 이름이 낯설 수 있습니다. Windows에서 `.env` 파일이 잘 열리지 않거나 내용을 보기 어렵다면, 파일 이름 끝에 `.txt`를 붙여 메모장으로 열 수 있습니다.
+
+예:
+
+```text
+.env.example -> .env.example.txt
+```
+
+메모장으로 연 뒤 각 줄의 `=` 오른쪽에 필요한 값을 입력하면 됩니다. 입력을 마쳤다면 최종 파일 이름은 반드시 `.env`로 바꿔야 합니다. `.env.txt` 상태로 두면 프로그램이 설정 파일로 읽지 못합니다.
+
+예:
+
+```text
+TELEGRAM_API_ID=123456
+TELEGRAM_API_HASH=내가_받은_api_hash
+TELEGRAM_PHONE=+821012345678
+```
+
+실제 값이 들어간 `.env` 파일은 GitHub에 올리면 안 됩니다.
 
 ## 9. 텔레그램 계정 로그인
 
